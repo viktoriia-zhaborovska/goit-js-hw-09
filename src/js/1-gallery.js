@@ -71,12 +71,12 @@ const gallery = document.querySelector('ul.gallery');
 
 const markup = images
   .map(
-    image => `<li class="gallery-item">
-    <a class="gallery-link" href="${image.original}">
-  <img class="gallery-image" src="${image.preview}" alt="${image.description}">
-    </a>
-  </li>
-  `
+    ({ preview, original, description }) =>
+      `<li class="gallery-item">
+        <a class="gallery-link" href="${original}">
+          <img class="gallery-image" src="${preview}" alt="${description}">
+        </a>
+      </li>`
   )
   .join('');
 
