@@ -1,0 +1,81 @@
+
+button {
+  width: 95px;
+  height: 40px;
+  height: 40px;
+  display: block;
+  font-weight: 500;
+  padding: 8px, 16px;
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover,
+button:focus {
+  background-color: #6c8cff;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 408px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  max-width: 360px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.feedback-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 0 8px 0 8px;
+}
+
+.feedback-form input:hover {
+  border: 1px solid #000;
+
+  outline: none;
+}
+
+.feedback-form input:active {
+  border: 1px solid #808080;
+}
+
+.feedback-form textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+.feedback-form textarea:hover {
+  border: 1px solid #000;
+}
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: transparent;
+}
+
+.feedback-form input:focus::placeholder,
+.feedback-form textarea:focus::placeholder {
+  color: #000;
+}
